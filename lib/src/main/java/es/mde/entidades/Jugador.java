@@ -4,7 +4,7 @@ public abstract class Jugador {
 
     private Long id;
     private String nombre, apellido1, apellido2, dni, telefono, email;
-    private Campo campo;
+    private String campo;
     
     public Jugador() {}
     
@@ -68,16 +68,12 @@ public abstract class Jugador {
         this.email = email;
     }
 
-    public Campo getCampo() {
+    public String getCampo() {
         return campo;
     }
 
-    public void setCampo(Campo campo) {
+    public void setCampo(String campo) {
         this.campo = campo;
     }
-    
-    public String getNombreCampo() {
-        return this.getCampo().getNombre();
-    }
-    
+  
 }
