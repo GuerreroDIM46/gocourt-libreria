@@ -76,5 +76,8 @@ public abstract class Jugador {
         this.campo = campo;
     }
     
+    public String getNombreCampo() {
+        return this.getCampo().getNombre();
+    }
     
 }
