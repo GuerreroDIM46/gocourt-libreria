@@ -3,7 +3,7 @@ package es.mde.entidades;
 public abstract class Jugador {
 
     private Long id;
-    private String nombre, apellido1, apellido2, dni, telefono, email, campoUrl;
+    private String nombre, apellido1, apellido2, dni, telefono, email, campoUrl, jugadorUrl;
     private Campo campo;
     
     public Jugador() {}
@@ -82,6 +82,14 @@ public abstract class Jugador {
 
     public void setCampoUrl(String campoUrl) {
         this.campoUrl = campoUrl;
+    }
+
+    public String getJugadorUrl() {
+        return jugadorUrl;
+    }
+
+    public void setJugadorUrl(String jugadorUrl) {
+        this.jugadorUrl = jugadorUrl;
     }   
-  
+    
 }
