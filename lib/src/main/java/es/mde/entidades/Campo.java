@@ -6,7 +6,7 @@ import java.util.Collection;
 public class Campo {
     
     private Long id;    
-    private String nombre, provincia, jugadoresUrl;
+    private String nombre, provincia, jugadoresUrl, campoUrl;
     private float valorCampo, valorSlope;
     private Collection<Jugador> jugadores = new ArrayList<>();
     
@@ -58,6 +58,14 @@ public class Campo {
 
     public void setJugadoresUrl(String jugadoresUrl) {
         this.jugadoresUrl = jugadoresUrl;
+    }    
+
+    public String getCampoUrl() {
+        return campoUrl;
+    }
+
+    public void setCampoUrl(String campoUrl) {
+        this.campoUrl = campoUrl;
     }
 
     public Collection<Jugador> getJugadores() {
